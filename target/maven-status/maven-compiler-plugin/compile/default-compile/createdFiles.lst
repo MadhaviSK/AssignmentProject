@@ -1,0 +1,6 @@
+com\assign\pojo\Input.class
+com\assign\controller\DatabaseAccess.class
+com\assign\dao\repository\RecipeRepository.class
+com\assign\AssignmentApplication.class
+com\assign\controller\RecipeController.class
+com\assign\dao\Recipes.class

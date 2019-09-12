@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jscript/jquery-3.4.1.min.js"></script>
+<script src="jscript/jquery.serializeToJSON.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+	<h2>Dashboard</h2>
+	<h3 id="message"></h3>
+	<div id="recipesDropDown">
+	Select Recipe and Press Manage to View/Delete/Edit 
+	<select id="listRecipes">
+	</select>
+
+	<input value="manage" type="button" id="manageRecipe" /> 
+	</div>
+
+	<div id="createRecipesDiv">
+	Add Recipes 
+
+	<form action="addRecipe" method="post" id="addRecipeForm">
+	<br/>
+	 recipeName: <input name="recipeName" type="text" />
+	<br/> VEG/NON-VEG :  <input name="isVeg" type="text" value="veg" /> 
+	 <br/>numberOfPeople: <input name="numberOfPeople" type="text" />
+	 <br/>ingredients: <input name="ingredients" type="text" />
+	  <br/>instructions: <input name="instructions" type="textarea" />
+	  <br/><input value ="submit" type="button" id="submitAdd" /> 
+	  <br/><input value ="RESET" type="reset" /> 
+	  <input value="add" name="recipeAction" type="hidden" />
+	  
+	</form>
+
+	</div>
+
+	 <div id="editViewRecipe"  style="display:none">
+	 <form  method="post" id="editRecipeForm">
+	<br/>
+	<h3>Edit Recipe </h3>
+	 recipeName: <input name="recipeName" type="text"  id="recipeName" />
+	<br/>  VEG/NON-VEG :  <input name="isVeg" type="text" value="veg" id="isVeg"/> 
+	 <br/>numberOfPeople: <input name="numberOfPeople" type="text" id="numberOfPeople" />
+	 <br/>ingredients: <input name="ingredients" type="text" id="ingredients" />
+	  <br/>instructions: <input name="instructions" type="textarea" id="instructions" />
+	<input name="recipeId" type="hidden" id="recipeId" />
+	  
+	  <br/><input value ="Edit" type="button" id="submitEdit" /> 
+	  <br/><input value ="Delete" type="button" id="submitDelete" /> 
+	  
+	  
+	</form>
+	 </div>
+	
+</body>
+</html>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: AssignmentProject
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: C02887A
+Implementation-Vendor-Id: com.assignment
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/AssignmentProject
+Created-By: Maven Integration for Eclipse
+
